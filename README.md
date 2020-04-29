@@ -63,9 +63,10 @@ regarding the same)
 
 **Some of the components used:** Arduino, keypad, LCD display, Servo Motor, USB cables, 2 LEDs (diff colours)
 
-**Implementation:** The circuit involves implementation of I2C protocol. The password for the locker can be set-up now. Now, the circuit shall be built on. The push button and LEDs are connected with the A-pins and the servo motor and the keypad to the D pins of the arduino. When the locker is empty, the green LED glows, and if it has something inside, the RED glows. The presence of an item is indicated by the push button; this is because it gets pressed by the item in the locker, which indicates the presence of an item in the locker. The servo motor takes care of the locking and unocking of the locker. When the user enters the right password; the servo motor spins 180 degrees and opens. The servo motor turns back to its original position within a certain period of time, thus it should be shut by then. If not, the door can't be closed and the password needs to be entered again to rotate the servo motor again. The LCD display shows messages like "corect password", "wrong password, try again".
-
 ![RB](https://content.instructables.com/FWC/IJ5L/K90058EV/FWCIJ5LK90058EV.LARGE.jpg?auto=webp&frame=1&width=342&height=1024&fit=bounds)
+
+
+**Implementation:** The circuit involves implementation of I2C protocol. The password for the locker can be set-up now. Now, the circuit shall be built on. The push button and LEDs are connected with the A-pins and the servo motor and the keypad to the D pins of the arduino. When the locker is empty, the green LED glows, and if it has something inside, the RED glows. The presence of an item is indicated by the push button; this is because it gets pressed by the item in the locker, which indicates the presence of an item in the locker. The servo motor takes care of the locking and unocking of the locker. When the user enters the right password; the servo motor spins 180 degrees and opens. The servo motor turns back to its original position within a certain period of time, thus it should be shut by then. If not, the door can't be closed and the password needs to be entered again to rotate the servo motor again. The LCD display shows messages like "corect password", "wrong password, try again".
 
 
 ## [PROJ 7: Electronic Horn](https://www.instructables.com/id/Electronic-Loud-Horn-Using-555-Timer/)
