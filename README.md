@@ -3,7 +3,7 @@ The following documents my understanding of different projects done by different
 
 ## [PROJ 1: Memory Puzzle Alarm Clock](https://www.instructables.com/id/Memory-Puzzle-Alarm-Clock/)
 
-The Alarm makes an irrestitible entry in the mornings of its user. A user can switch the alarm off only when he solves a puzzle. Only when the user enters the pattern formed by the LEDs rightly within a minute, will the alarm switch off. 
+The Alarm makes an irrestitible entry in the mornings of its user. [A user can switch the alarm off only when he solves a puzzle](https://www.youtube.com/watch?v=yiIp7JVNLs0&feature=emb_logo). Only when the user enters the pattern formed by the LEDs rightly within a minute, will the alarm switch off. 
 
 **Some of the main components:** Two Arduinos, DS1302(Real time clock), LCD Display, 3 LEDs and 3 buttons (of the same colours), EC11 rotary encoder and speakers.
 
