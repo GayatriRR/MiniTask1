@@ -5,7 +5,7 @@ The following documents my understanding of different projects done by different
 
 The Alarm makes an irrestitible entry in the mornings of its user. A user can switch the alarm off only when he solves a puzzle. Only when the user enters the pattern formed by the LEDs rightly within a minute, will the alarm switch off. 
 
-Some of the main components: Two Arduinos, DS1302(Real time clock), LCD Display, 3 LEDs and 3 buttons (of the same colours), EC11 rotary encoder and speakers.
+### [Some of the main components:] Two Arduinos, DS1302(Real time clock), LCD Display, 3 LEDs and 3 buttons (of the same colours), EC11 rotary encoder and speakers.
 
 Working of the alarm: When the alarm is switched on, we first need to set the current time, the time at which alarm should ring and the difficulty level of the puzzle. When the alarm rings, when one of the alarms are pressed, the alarm stops ringing temporarily and the LEDs produce a pattern. The pattern produced by the LED must be inputted into the alarm by the user within a minute, else the alarm will automatically start ringing after that.
 
