@@ -47,7 +47,7 @@ regarding the same)
 
 **Some of the important components:** TPA3116D2 2.0 Digital power amplifier Board, Raspberry Pi, Raspberry Pi, Micro Sd 32 GB card, USB sound card, monitor, speaker, HDMI to VGA adapter, Raspberry Pi (5V-3A) power supply, ethernet cable, microphone
 
-![RB](https://content.instructables.com/FAL/2HN6/K9703KGW/FAL2HN6K9703KGW.LARGE.jpg?auto=webp&fit=bounds)
+![RB](https://content.instructables.com/FAL/2HN6/K9703KGW/FAL2HN6K9703KGW.LARGE.jpg?auto=webp&frame=1&width=761&fit=bounds)
 
 
 **Implementation:** Rasbian installation, setting-up of wifi and enabling remote access of Raspberry Pi must be done and the SD card with these files must be connected to the Pi and powered on. Next, the IP address of the Raspberry Pi must be found and set up in the router for remote access of the Pi from anywhere from the internet. Establishment of the raspberry connection can be done on Putty and upgrades implemented. Remote access using RealVNC needs to be set up. Installment of Noip software to ensure that the Raspberry is always available at the same address needs to be ensured. Once the whole process of remote access establishment is done on our PC, the Pi is rebooted. Now remote access from VNC Chromium on our PC will do the trick. 
