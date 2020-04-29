@@ -127,6 +127,15 @@ Some of the components used: Raspberry Pi 3, MicroUSB connecter, MicroSD card, P
 Implemenation: The push button cum LED component is connected to the Raspberry Pi with jumper wires. A resistor must connected to the positive terminal assigned for the LED because the LED is rated only for 1.8-2.8V. Connect the USB microphone to the Raspberry Pi. The camera is also connected to the Pi. The positive wires of the speaker and the button are connected together and to GPIO pin of the Pi and the signal and ground of the speaker is soldered to the monitor. The HDMI cable must be connected to the Raspberry Pi. Now, connect to the Pi through VNC on the laptop. Next, we need to enable the camera and micrrophone and store the settings so that the settings remain after rebooting also. Next we need to load a python code which makes sure that once the button is pressed, it makes a sound and then leads to the website with the video call link and sends an email with the meeting link (to the specified email address). Once all this done, we reboot the device and the device is ready to work.
 
 
+PROJ 16: XY Laser (https://diyodemag.com/projects/xy_lasyer_arduino_pan_tilt_servo_laser_pointer_project)
+
+Some of the components used: Arduino, servo motors, joystick module, laser pointer
+
+Implemetation: The joystick module is a combination of two potentiometers with a switch. While rotating the joystick handle, we press the switch down and rotate it, and therefore change the value of resistance in the X and Y potentiometers. We connect the Vrx and Vry pins of the joystick to the analog pins of the Arduino and the switch of the joystick to a digital input pin. The servos are connected to the digital outpins of the Arduino. When the switch is pressed and the handle of the joystick rotated, the servos get input from the Arduino to how much they should rotate according to the X and Y potentiometer values. This helps in the panning and tilting of the system holding the laser pointer. This prototype can also be used in surveillance camera applications.
+
+
+PROJ 17: 
+
 PROJ 16: Automatic Alcohol Dispensor (https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
 
 Some of the components used: Proximity sensor, DC Water Pump, PNP Transistor or MOSFET, Diode
