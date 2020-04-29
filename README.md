@@ -151,10 +151,6 @@ The [synth](https://youtu.be/YYtZRjsq8O8) is a pulse width modulated oscillator,
 
 **Some of the components used:** Raspberry Pi 3, MicroUSB connecter, MicroSD card, Push button with LED, USB Microphone, Raspberry Pi LCD Screen, Raspberry Pi camera, speaker with amplifier
 
-
-![hi](https://hackster.imgix.net/uploads/attachments/1091417/71oou-w05l__ac_sl1200__9nbVliQigv.jpg)
-
-
 **Implemenation:** The push button cum LED component is connected to the Raspberry Pi with jumper wires. A resistor must connected to the positive terminal assigned for the LED because the LED is rated only for 1.8-2.8V. Connect the USB microphone to the Raspberry Pi. The camera is also connected to the Pi. The positive wires of the speaker and the button are connected together and to GPIO pin of the Pi and the signal and ground of the speaker is soldered to the monitor. The HDMI cable must be connected to the Raspberry Pi. Now, connect to the Pi through VNC on the laptop. Next, we need to enable the camera and micrrophone and store the settings so that the settings remain after rebooting also. Next we need to load a python code which makes sure that once the button is pressed, it makes a sound and then leads to the website with the video call link and sends an email with the meeting link (to the specified email address). Once all this done, we reboot the device and the device is ready to work.
 
 
@@ -165,7 +161,7 @@ The [synth](https://youtu.be/YYtZRjsq8O8) is a pulse width modulated oscillator,
 ![po](https://diyodemag.com/_images/5e7f0ba2c672e0b77dc45f3e,816,544)
 
 
-**Implemetation:** The joystick module is a combination of two potentiometers with a switch. While rotating the joystick handle, we press the switch down and rotate it, and therefore change the value of resistance in the X and Y potentiometers. We connect the Vrx and Vry pins of the joystick to the analog pins of the Arduino and the switch of the joystick to a digital input pin. The servos are connected to the digital outpins of the Arduino. When the switch is pressed and the handle of the joystick rotated, the servos get input from the Arduino to how much they should rotate according to the X and Y potentiometer values. This helps in the panning and tilting of the system holding the laser pointer. This prototype can also be used in surveillance camera applications.
+**Implemetation:** The above circuit diagram is of the joystick module is a combination of two potentiometers with a switch. While rotating the joystick handle, we press the switch down and rotate it, and therefore change the value of resistance in the X and Y potentiometers. We connect the Vrx and Vry pins of the joystick to the analog pins of the Arduino and the switch of the joystick to a digital input pin. The servos are connected to the digital outpins of the Arduino. When the switch is pressed and the handle of the joystick rotated, the servos get input from the Arduino to how much they should rotate according to the X and Y potentiometer values. This helps in the panning and tilting of the system holding the laser pointer. This prototype can also be used in surveillance camera applications.
 
 
 ## [PROJ 17: Water level controller using 8051 Microcontroller](https://www.electronicshub.org/water-level-controller-using-8051-microcontroller/)
