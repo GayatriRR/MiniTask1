@@ -178,26 +178,28 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 **Implementation:** The LCD display is connected to the microprocessor in the 8-bit mode. The GSM module is directly connected to the microprocessor if there is a level converter on the board. If not, we use a MAX232 IC as a mediator between them. The SIM card is inserted in the module before switching on the supply. To communicate between the GSM module and the microprocessor, we use the UART protocol at a 9600 baud rate. We check for the *+CMTI: "SM",<location number>* message from the GSM module and if it is received, we store the location number. Next, the microprocessor sends the command *AT+CMGR=<location number>* to which it receives a command from which it extracts only the body of the message and displays on the LCD Display.
 
 
-## [PROJ 22: LC Meter](https://www.electronicshub.org/lc-meter-circuit-using-555-timer/)
+## [PROJ 22: RF Based Metal Detector Robot](https://www.electronicshub.org/metal-detector-robotic-vehicle/)
 
-**Some of the components used:** 
+**Some of the components used:** AT89C51 microcontroller, RF encoder and decoder, RF transmitter and receiver pair, Push buttons, Buzzer, L293D motor driver, RS232 cable
+
+**Implementation:** The system consists of a transmitter and a receiver section where we give the commands to the robot through the transmitter and the receiver side acts on the instructions given. The tranmsitter section consists of RF encoder(HT12E), RF transmitter and push buttons. The 4 bit-input is applied through AD0-AD3 and transmission is enabled when the pin for enabling transmission is low. The input to the encoder is given through buttons and transmitted through the transmitter and received by the receiver serially. From the receiver, the data enters the decoder and from the decoder to the microcontroller which takes decision based on the instruction given. The metal detector is conneced to the PORT3.2 of the microcontroller which has an oscillator which produces an alternating magnetic field due to alternating current. When a metal is brought close to the detector, there is another coil which senses the change in magnetic field and gives the corresponding output from the detector. The motor driver is connected to the PORT1 of the microcontroller and the motors of the robot are controlled by the microcontroller. These motors run according to the instructions from the transmitter. When the metal detector senses a metal, the microcontroller makes the buzzer make the sound and stops the motors too.  
 
 
-## [PROJ 22: Automatic Alcohol Dispensor](https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
+## [PROJ 23: Automatic Alcohol Dispensor](https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
 
 **Some of the components used:** Proximity sensor, DC Water Pump, PNP Transistor or MOSFET, Diode
 
 **Implementation:** We let the proximity sensor on the the dispensor and connect its output to the base of the transistor so that it acts as a switch. The collector is passed as input to the DC Pump. The emitter of the transistor is connected to the Vcc. Thus when the proximity sensor senses a hand nearby, the transistor acts as a closed switch and the DC pump is made to pump the alcohol into the user's hand. 
 
 
-## [PROJ 23: Mini Laptop](https://www.instructables.com/id/MINI-LAPTOP/)
+## [PROJ 24: Mini Laptop](https://www.instructables.com/id/MINI-LAPTOP/)
 
 **Some of the components used:** 7 inch IPS display and connector, Raspberry Pi 3, Bluetooth keyboard, 5600 Mah power supply, micro USB pin, audio system, memory card
 
 **Implementation:** Connect the display to the connector and fit the connector over the Raspberry Pi's GPIO pins. Get the power source, connect it to a switch and a micro USB pin to  the Raspberry Pi's power supply. A 16 GB memory card with Rasbian installed is inserted into the Micro SD card slot of the Pi. The audio system is now attached to the audio jack of the PI. The bluetooth keyboard is attached to the system through one of the USB ports of the Raspberry Pi.
 
 
-## [PROJ 24: Bluetooth Speaker](https://www.instructables.com/id/Worlds-Smallest-Bluetooth-Speaker/)
+## [PROJ 25: Bluetooth Speaker](https://www.instructables.com/id/Worlds-Smallest-Bluetooth-Speaker/)
 
 **Some of the components used:** CJMCU PAM8302 (Mono class amplifier board), speaker, bluetooth board, LIPO battery
 
@@ -206,7 +208,7 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 **Comments:** This has an easy implementation, thus could include a feature of increasing or decreasing volume of the speaker. This could be done by varying the gain of the amplifier based on the input given. This could be done by using a potentiometer to change the resistance in the circuit and thus the gain.
 
 
-## [PROJ 25: No contact IR thermometer](https://www.instructables.com/id/No-contact-IR-Thermometer/)
+## [PROJ 26: No contact IR thermometer](https://www.instructables.com/id/No-contact-IR-Thermometer/)
 
 **Some of the components used:** MLX 90614-BCH IR thermal sensor, Arduino CH340, OLED i2c Display, Laser diode, push button
 
