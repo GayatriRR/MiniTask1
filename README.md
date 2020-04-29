@@ -1,7 +1,7 @@
 # MiniTask1
 The following documents my understanding of different projects done by different people across the world.
 
-#PROJ 1: Memory Puzzle Alarm Clock (https://www.instructables.com/id/Memory-Puzzle-Alarm-Clock/)
+PROJ 1: Memory Puzzle Alarm Clock (https://www.instructables.com/id/Memory-Puzzle-Alarm-Clock/)
 
 The Alarm makes an irrestitible entry in the mornings of its user. A user can switch the alarm off only when he solves a puzzle. Only when the user enters the pattern formed by the LEDs rightly within a minute, will the alarm switch off. 
 
@@ -15,7 +15,7 @@ Comments: The I2C protocol is best used here because more than one device will n
 (For generally distinguishing between protocols, https://www.seeedstudio.com/blog/2019/09/25/uart-vs-i2c-vs-spi-communication-protocols-and-uses/)
 
 
-#PROJ 2: Updating COVID-19 Data in Real Time (https://www.instructables.com/id/MicroPython-ProgramUpdate-Coronavirus-DiseaseCOVID/)
+PROJ 2: Updating COVID-19 Data in Real Time (https://www.instructables.com/id/MicroPython-ProgramUpdate-Coronavirus-DiseaseCOVID/)
 
 COVID-19 is a pandemic which is growing right in front of our eyes. The project deals with getting real time data regarding the same.
 
@@ -24,7 +24,7 @@ Some of the main components: ESP32, Lithium battery, toggle switch and USB cable
 Implementation: Using MicroPython on UPyCraft IDE, we enable USB communication with ESP32. Through this, we will be able to enable WiFi connection after entering the appropriate wifi username and password in the code. Through the Python code, we enable taking information from the website which contains statistics related to the COVID situation across different countries. Now, we print the results for different countries from the data hat is being collected from the website.The left pin of the toggle switch is welded to the power input of the ESP32 module.The positive pole of the lithium battery is connected to the middle of the toggle switch, and the negative pole is connected to the GND of the module. The toggle switch controls the on and off of the ESP32 module. When it is switched on, it connects to the internet and the display shows the statistics.
 
 
-#PROJ 3: The Personal Assistant (https://www.instructables.com/id/Personal-Assistant/)
+PROJ 3: The Personal Assistant (https://www.instructables.com/id/Personal-Assistant/)
 
 Creating a device which gives notifications enabled with voice system is the motivation of this project.
 
@@ -39,33 +39,33 @@ Comments: As ESP2866 and ESP32 provide the same functionalities, there comes the
 regarding the same.
 
 
-#PROJ 4: Automatic Video Conference with Raspberry Pi (https://www.instructables.com/id/Automatic-Video-Conference-for-Grandma-With-Raspbe/)
+PROJ 4: Automatic Video Conference with Raspberry Pi (https://www.instructables.com/id/Automatic-Video-Conference-for-Grandma-With-Raspbe/)
 
 Some of the important components: TPA3116D2 2.0 Digital power amplifier Board, Raspberry Pi, Raspberry Pi, Micro Sd 32 GB card, USB sound card, monitor, speaker, HDMI to VGA adapter, Raspberry Pi (5V-3A) power supply, ethernet cable, microphone
 
 Implementation: Rasbian installation, setting-up of wifi and enabling remote access of Raspberry Pi must be done and the SD card with these files must be connected to the Pi and powered on. Next, the IP address of the Raspberry Pi must be found and set up in the router for remote access of the Pi from anywhere from the internet. Establishment of the raspberry connection can be done on Putty and upgrades implemented. Remote access using RealVNC needs to be set up. Installment of Noip software to ensure that the Raspberry is always available at the same address needs to be ensured. Once the whole process of remote access establishment is done on our PC, the Pi is rebooted. Now remote access from VNC Chromium on our PC will do the trick. 
 
 
-#PROJ 5: Multi-channel Wifi Voltage and Current Meter (https://www.instructables.com/id/Multi-channel-Wifi-Voltage-Current-Meter/)
+PROJ 5: Multi-channel Wifi Voltage and Current Meter (https://www.instructables.com/id/Multi-channel-Wifi-Voltage-Current-Meter/)
 
 Some of the components used: 3 Ina260 adafruit boards, ESP32 
 
 Implementation: The Ina260 Adafruit has a very accurate voltage and current meter packed with I2C protocol and for a display, we use he ESP32 which can also carry a webserver to present the quantities on a PC or mobile screen. The 3 Ina260 boards can be assigned their own addresses for the I2C protocol communication on A0 and A1 bits in the combination of Vcc, GND, SCL and SDA. The Ina260 must be conncted to the 3.3V of the ESP32 and the SDA and SCL to the pins 21 and 22 of the ESP32. Once the ESp32 is set up on Arduino IDE and the I2C protocol functioning checked, we create a folder named 'data' that should contain the created webpage files that shall be loaded into the ESP's RAM. We get the voltage and current measurements from the 3 boards into the ESP32 and the HTML code can plot graphs for the obtained values. The webpages are then loaded into the ESP32 and configure it as a webserver.
 
-#PROJ 6: Locker (https://www.instructables.com/id/Phone-Coffer/)
+PROJ 6: Locker (https://www.instructables.com/id/Phone-Coffer/)
 
 Some of the components used: Arduino, keypad, LCD display, Servo Motor, USB cables, 2 LEDs (diff colours)
 
 Implementation: The circuit involves implementation of I2C protocol. The password for the locker can be set-up now. Now, the circuit shall be built on. The push button and LEDs are connected with the A-pins and the servo motor and the keypad to the D pins of the arduino. When the locker is empty, the green LED glows, and if it has something inside, the RED glows. The presence of an item is indicated by the push button; this is because it gets pressed by the item in the locker, which indicates the presence of an item in the locker. The servo motor takes care of the locking and unocking of the locker. When the user enters the right password; the servo motor spins 180 degrees and opens. The servo motor turns back to its original position within a certain period of time, thus it should be shut by then. If not, the door can't be closed and the password needs to be entered again to rotate the servo motor again. The LCD display shows messages like "corect password", "wrong password, try again".
 
-#PROJ 7: Electronic Horn (https://www.instructables.com/id/Electronic-Loud-Horn-Using-555-Timer/)
+PROJ 7: Electronic Horn (https://www.instructables.com/id/Electronic-Loud-Horn-Using-555-Timer/)
 
 Some of the components used: IC 555, IC LM386, resistors, potentiometer, push button, LED, capacitors, speakers, capacitors
 
 Implementation: The 555 acts as a astable multivibrator which produces a periodic rectangular signal with duty cycle that is decided by the ratio of the resistors. The 555 timer has one resistor, one potentiometer and a capacitor to produce the signal of required frequency; the frequency can be varied by changing the resistance of the potentiometer. Then the generated signal is sent to the L386; the amplifier. The gain is already set at 20; thus with the external resistors, we can have the gain in the range 20-200. The signal passes through another potentiometer before reaching LM386, which can vary the aplitude of the final output signal. The signal now can be given to the speakers. The push button can be used to switch on and off the speaker. The capacitors are used to remove ripples. Thus we have a speaker whose frequency and amplitude can be changed. 
 
 
-#PROJ 8: Build a computer (https://www.instructables.com/id/Build-a-Computer-W-Basic-Understanding-of-Electron/)
+PROJ 8: Build a computer (https://www.instructables.com/id/Build-a-Computer-W-Basic-Understanding-of-Electron/)
 
 Some of the components used: LM7805C:5V Linear Regulator, Zilog Z80 Microprocessor, AT28C64B EEPROM, 74LS273 and 74HC374E octal D flipflops, 3 CD4001BE quad NOR gates, NE555 clock generator, resistors, capacitors, 1 push button, button matrix, 8 LEDs
 
@@ -73,7 +73,7 @@ Implementation: The EEPROM stores the program for the processor Z80 to execute. 
 We connect the first 8 Address pins of the microprocessor with the corresponding Address pins of the ROM. The ROM's /CE: (Chip enable) pin is wired to the processor's pin 19 (/MREQ:memory request); and the ROM's /OE (output enable) to the processor's pin 21 (/RD:read). Now we connect the data bits to the D pins on the flip-flops. The outputs of the flip-flops are connected to the NOR gates and then connected to the LEDs to give the output. We take the input from the buttons and give it to a flip-flop and connect the flipflop's output to the data bus. Now, the ROM must be programmed accordingly for the circuit to work.
 
 
-#PROJ 9: Alarm Bike Lock (https://www.instructables.com/id/DIY-Alarm-Bike-Lock-Shock-Activated/)
+PROJ 9: Alarm Bike Lock (https://www.instructables.com/id/DIY-Alarm-Bike-Lock-Shock-Activated/)
 
 Some of the components used: LiPo battery, TP4056 (charging board), slide switches, LP2950 regualator, MCP602 opamp, resistors and capacitors, potentiometer, CD4013 RS flipflop, IRLML6344 MOSFET, buzzer, piezoelectric disc
 
@@ -82,13 +82,13 @@ Implementation: Connect the LiPo battery to the TP4056 (prevents over current, o
 Comment: Many such projects have been implemented with microcontrollers, but using microcontrollers is not required for this. Using an Arduino would just increase the cost of the project.
 
 
-#PROJ 10: Spot Welder (https://www.instructables.com/id/Super-Simple-DIY-Spot-Welder-Pen-MOT-Battery-Tab-W/)
+PROJ 10: Spot Welder (https://www.instructables.com/id/Super-Simple-DIY-Spot-Welder-Pen-MOT-Battery-Tab-W/)
 Some of the components used: Copper lugs, mini electric drill bit, tool chuck, brass tube, silicon wire
 
 Implementation: Drill screw holes to fit the chuck and the pipe together and also holes to fit the pipe and the chuck together for soldering later. Remove a small portion of the insulation of the gauge wire and slide it into the lug and solder over the lug to make sure that the wire stays intact. The hole in the lug also helps in this purpose. Now we find the exact length of the gauge wire required and cut the wire apart. After removing the insulation of this wire, and fit the copper tube and the chuck and solder those parts to hold them together. Taper screws are used to hold the parts together now. Now we wrap the copper tube with shrink wrap to act as insulation.
 
 
-#PROJ 11: Moog Style Synth (https://www.instructables.com/id/Moog-Style-Synth/)
+PROJ 11: Moog Style Synth (https://www.instructables.com/id/Moog-Style-Synth/)
 
 The synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter. Its tonality is supplied via a PWM and a high-resonance low pass filter. The light control is brought in through the LDRs which brings in a beautiful touch to this instrument.
 
@@ -97,7 +97,7 @@ Some of the components used: Resistors, capacitors, CD40106 inverted Schmitt Tri
 Implementation: When the push buttons are pressed, it chooses the tone as the push button closes a certain path in the circuit resulting in a corresponding resistance in the circuit. The potentiometers are used to change the value of volume (amplification), or for pulse width modulation (for the beats) or even for changing the speed of the beats (changing the frequency). The optocoupler has the LED pulsing with light, which producesa rhythmic effect in the music. There are two LDRs which can produce a change in music by placing and removing the hand from them. There is a Micro USB adapter to charge the system. Moreover, an on-off switch to turn on/off the power for the whole system. Once the power of 9V is given and the output is connected through the audio jack to the speaker, the moog is ready to produce music.
 
 
-#PROJ 12: Wifi Hydroponics Meter (https://www.instructables.com/id/Wifi-Hydroponics-Meter/)
+PROJ 12: Wifi Hydroponics Meter (https://www.instructables.com/id/Wifi-Hydroponics-Meter/)
 
 Some of the components used: Adafruit Esp8266, Ezo pH circuit, pH probe, EZO conductivity circuit, K1 conductivity probe, EZO temperature circuit, PT-1200 temperature probe, 2 Electrically isolated carrier boards+ 1 non-isolated board, Male USB to male Micro USB cable, 5V-1A adapter, micro USB male to micro USB female adapter
 
@@ -106,42 +106,42 @@ Implementation: Download Termite which is a free RS232 where serial commands can
 Comments: Though the connection are pretty straightforward in this circuit, there are important learning outcomes that can be gained from this project. For eg: the components used and the application of electronics in Chemistry.
 
 
-#PROJ 13: Object counter using IR (https://www.instructables.com/id/Object-Counter-Using-IR/)
+PROJ 13: Object counter using IR (https://www.instructables.com/id/Object-Counter-Using-IR/)
 
 Some of the components used: CD4026BE 7 segment driver, LM358 opamp, BC547 npn transistor, push button, potentiometer, resistors, 7-segment display, IR LED, photodiode, 9V power supply
 
 Implementation: The opamp's (which acts as a comparator) output acts as a clock for the counter (7 segment driver): each time an object is sensed, the output of the opamp produces a high output resulting in a positive edge for the counter. The potentiometer helps in changing the sensitivity of the photodiode. The transistor acts as a switch here. The push button is used to reset the circuit. The carry out from the first 7 segment driver is connected to the clock of the second driver to count the 10s digit of the counter. The drivers are connected to the 7 segment displays accordingly. The object is sensed when the photodiode can't sense the IR LED's output and gives a low output which makes the transistor act like an open circuit. Due to this, the input into the In+ terminal of the comparator is a high; resulting is a high output from the comparator.
 
 
-#PROJ 14: Tatoo machine power supply (https://www.hackster.io/matt-reid/custom-tattoo-machine-power-supply-49d873)
+PROJ 14: Tatoo machine power supply (https://www.hackster.io/matt-reid/custom-tattoo-machine-power-supply-49d873)
 
 Some of the components used: Microchip pic16f88 microprocessor, Maxim Integrated DS1868 digital potentiometer,INA138 current output-current sense amplifier, 555 timers, Linear regulator with adjustable output
 
 Implementation: As there is only one output at a time, one linear regulator is only used. To direct the regulated voltage, mosfets controlled by the microcontroller have been used (based on the input given). A push button to cut of all inputs has been used too. A digital potentiometer is controls the output from the opamp. The potentiometer takes a value as per the input given and the corresponding output is given to the amplifier as the final output desired might go up to 15-16V which the potentiometer will not be able to generate (because the supply voltage of the potentiometer is 5V). Moreover, a digital potentiometer can only handle small currents. The output current is measured using a voltage divider. This is because the PIC microcontroller can operate only upto 5V while the voltage that needs to measured can go upto around 15V. To measure the duty cycle, we use the INA138 current monitor. The gain is set high so that the signal clips to produce a signal close to a square function at the output of the INA138 everytime the coils are energised. The compartor is used to produce a true square wave. Next, the 555 timer is connected in monostable mode to clear the blips and produce a solid square wave. The produced signal is passed to the microcontroller which starts the timer to measure the on time and off time and calculate the duty cycle and frequency. 
 
 
-#PROJ 15: Smart Doorbell Video Intercom System (https://www.hackster.io/hackershack/smart-doorbell-video-intercom-system-e5aa61)
+PROJ 15: Smart Doorbell Video Intercom System (https://www.hackster.io/hackershack/smart-doorbell-video-intercom-system-e5aa61)
 
 Some of the components used: Raspberry Pi 3, MicroUSB connecter, MicroSD card, Push button with LED, USB Microphone, Raspberry Pi LCD Screen, Raspberry Pi camera, speaker with amplifier
 
 Implemenation: The push button cum LED component is connected to the Raspberry Pi with jumper wires. A resistor must connected to the positive terminal assigned for the LED because the LED is rated only for 1.8-2.8V. Connect the USB microphone to the Raspberry Pi. The camera is also connected to the Pi. The positive wires of the speaker and the button are connected together and to GPIO pin of the Pi and the signal and ground of the speaker is soldered to the monitor. The HDMI cable must be connected to the Raspberry Pi. Now, connect to the Pi through VNC on the laptop. Next, we need to enable the camera and micrrophone and store the settings so that the settings remain after rebooting also. Next we need to load a python code which makes sure that once the button is pressed, it makes a sound and then leads to the website with the video call link and sends an email with the meeting link (to the specified email address). Once all this done, we reboot the device and the device is ready to work.
 
 
-#PROJ 16: Automatic Alcohol Dispensor (https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
+PROJ 16: Automatic Alcohol Dispensor (https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
 
 Some of the components used: Proximity sensor, DC Water Pump, PNP Transistor or MOSFET, Diode
 
 Implementation: We let the proximity sensor on the the dispensor and connect its output to the base of the transistor so that it acts as a switch. The collector is passed as input to the DC Pump. The emitter of the transistor is connected to the Vcc. Thus when the proximity sensor senses a hand nearby, the transistor acts as a closed switch and the DC pump is made to pump the alcohol into the user's hand. 
 
 
-#PROJ 17: Mini Laptop (https://www.instructables.com/id/MINI-LAPTOP/)
+PROJ 17: Mini Laptop (https://www.instructables.com/id/MINI-LAPTOP/)
 
 Some of the components used: 7 inch IPS display and connector, Raspberry Pi 3, Bluetooth keyboard, 5600 Mah power supply, micro USB pin, audio system, memory card
 
 Implementation: Connect the display to the connector and fit the connector over the Raspberry Pi's GPIO pins. Get the power source, connect it to a switch and a micro USB pin to  the Raspberry Pi's power supply. A 16 GB memory card with Rasbian installed is inserted into the Micro SD card slot of the Pi. The audio system is now attached to the audio jack of the PI. The bluetooth keyboard is attached to the system through one of the USB ports of the Raspberry Pi.
 
 
-#PROJ 18: Bluetooth Speaker (https://www.instructables.com/id/Worlds-Smallest-Bluetooth-Speaker/)
+PROJ 18: Bluetooth Speaker (https://www.instructables.com/id/Worlds-Smallest-Bluetooth-Speaker/)
 
 Some of the components used: CJMCU PAM8302 (Mono class amplifier board), speaker, bluetooth board, LIPO battery
 
@@ -150,7 +150,7 @@ Implementation: The speakers are connected to the load pins of the amplifier boa
 Comments: This has an easy implementation, thus could include a feature of increasing or decreasing volume of the speaker. This could be done by varying the gain of the amplifier based on the input given. This could be done by using a potentiometer to change the resistance in the circuit and thus the gain.
 
 
-#PROJ 19: No contact IR thermometer (https://www.instructables.com/id/No-contact-IR-Thermometer/)
+PROJ 19: No contact IR thermometer (https://www.instructables.com/id/No-contact-IR-Thermometer/)
 
 Some of the components used: MLX 90614-BCH IR thermal sensor, Arduino CH340, OLED i2c Display, Laser diode, push button
 
