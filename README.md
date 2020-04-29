@@ -101,12 +101,15 @@ We connect the first 8 Address pins of the microprocessor with the corresponding
 
 **Some of the components used:** Copper lugs, mini electric drill bit, tool chuck, brass tube, silicon wire
 
+![sw](https://content.instructables.com/FED/7O2U/K5R37NYP/FED7O2UK5R37NYP.LARGE.jpg?auto=webp&frame=1&crop=3:2&width=300&height=1024&fit=bounds)
+
+
 **Implementation:** Drill screw holes to fit the chuck and the pipe together and also holes to fit the pipe and the chuck together for soldering later. Remove a small portion of the insulation of the gauge wire and slide it into the lug and solder over the lug to make sure that the wire stays intact. The hole in the lug also helps in this purpose. Now we find the exact length of the gauge wire required and cut the wire apart. After removing the insulation of this wire, and fit the copper tube and the chuck and solder those parts to hold them together. Taper screws are used to hold the parts together now. Now we wrap the copper tube with shrink wrap to act as insulation.
 
 
 ## [PROJ 11: Moog Style Synth](https://www.instructables.com/id/Moog-Style-Synth/)
 
-The synth is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter. Its tonality is supplied via a PWM and a high-resonance low pass filter. The light control is brought in through the LDRs which brings in a beautiful touch to this instrument.
+The [synth](https://youtu.be/YYtZRjsq8O8) is a pulse width modulated oscillator, routed through a light-controlled resonant low pass filter. Its tonality is supplied via a PWM and a high-resonance low pass filter. The light control is brought in through the LDRs which brings in a beautiful touch to this instrument.
 
 **Some of the components used:** Resistors, capacitors, CD40106 inverted Schmitt Trigger, 5 Lm358 Dual operational amplifiers, Potentiometers, LDRs, 555 Timer, BC547 transistor, optocoupler (LDR and LED facing each other in a heat shrink), 9V battery, SPDT switches, push buttons, knobs for potentiometers, audio jack
 
@@ -117,6 +120,10 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 
 **Some of the components used:** Adafruit Esp8266, Ezo pH circuit, pH probe, EZO conductivity circuit, K1 conductivity probe, EZO temperature circuit, PT-1200 temperature probe, 2 Electrically isolated carrier boards+ 1 non-isolated board, Male USB to male Micro USB cable, 5V-1A adapter, micro USB male to micro USB female adapter
 
+
+![hm](https://cdn.instructables.com/FFF/UZTI/K0MP68X3/FFFUZTIK0MP68X3.LARGE.jpg?auto=webp&frame=1&width=933&fit=bounds)
+
+
 **Implementation:** Download Termite which is a free RS232 where serial commands can be input and responses observed. Connect the pH probe to the BNC port of the isolated carrier board and connect the pH circuit in I2C mode with the carrier board. Once calibrated, send command 'i2c,99' which will set up i2c protocol with device address 99. Similarly, we repeat for the conductivity and the temperature circuits and set them with i2c and device addresses 100 and 102. Now the Adafruit model is connected in the I2C mode with the three circuits where the pH and the conductivity circuits are connected to the isolated boards while the temperature circuit is connected to the non-isolated board. The pH and conductivity can get affected by interference from other electronics, which we prevent using the isolated carrier boards. Moreover, they get affected by changes in tempertaure; which is taken care of from the value obtained from the temperature sensor. We use ThingSpeak channel to upload our data and make sense of it. We load the ESP2866, ThinkSpeak and EZO libraries before starting the code. Now we code and include information of wifi and Thinkspeak key in it. Once all this is done, the program can be run by setting serial communication at a baud rate of 9600. The data will get uploaded to ThinkSpeak.
 
 **Comments:** Though the connection are pretty straightforward in this circuit, there are important learning outcomes that can be gained from this project. For eg: the components used and the application of electronics in Chemistry.
@@ -125,6 +132,10 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 ## [PROJ 13: Object counter using IR](https://www.instructables.com/id/Object-Counter-Using-IR/)
 
 **Some of the components used:** CD4026BE 7 segment driver, LM358 opamp, BC547 npn transistor, push button, potentiometer, resistors, 7-segment display, IR LED, photodiode, 9V power supply
+
+
+![oc](https://cdn.instructables.com/FKB/E60A/JYEOHDK3/FKBE60AJYEOHDK3.LARGE.jpg?auto=webp&frame=1&width=550&fit=bounds)
+
 
 **Implementation:** The opamp's (which acts as a comparator) output acts as a clock for the counter (7 segment driver): each time an object is sensed, the output of the opamp produces a high output resulting in a positive edge for the counter. The potentiometer helps in changing the sensitivity of the photodiode. The transistor acts as a switch here. The push button is used to reset the circuit. The carry out from the first 7 segment driver is connected to the clock of the second driver to count the 10s digit of the counter. The drivers are connected to the 7 segment displays accordingly. The object is sensed when the photodiode can't sense the IR LED's output and gives a low output which makes the transistor act like an open circuit. Due to this, the input into the In+ terminal of the comparator is a high; resulting is a high output from the comparator.
 
@@ -140,6 +151,10 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 
 **Some of the components used:** Raspberry Pi 3, MicroUSB connecter, MicroSD card, Push button with LED, USB Microphone, Raspberry Pi LCD Screen, Raspberry Pi camera, speaker with amplifier
 
+
+![hi](https://hackster.imgix.net/uploads/attachments/1091417/71oou-w05l__ac_sl1200__9nbVliQigv.jpg)
+
+
 **Implemenation:** The push button cum LED component is connected to the Raspberry Pi with jumper wires. A resistor must connected to the positive terminal assigned for the LED because the LED is rated only for 1.8-2.8V. Connect the USB microphone to the Raspberry Pi. The camera is also connected to the Pi. The positive wires of the speaker and the button are connected together and to GPIO pin of the Pi and the signal and ground of the speaker is soldered to the monitor. The HDMI cable must be connected to the Raspberry Pi. Now, connect to the Pi through VNC on the laptop. Next, we need to enable the camera and micrrophone and store the settings so that the settings remain after rebooting also. Next we need to load a python code which makes sure that once the button is pressed, it makes a sound and then leads to the website with the video call link and sends an email with the meeting link (to the specified email address). Once all this done, we reboot the device and the device is ready to work.
 
 
@@ -147,12 +162,19 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 
 **Some of the components used:** Arduino, servo motors, joystick module, laser pointer
 
+![po](https://diyodemag.com/_images/5e7f0ba2c672e0b77dc45f3e,816,544)
+
+
 **Implemetation:** The joystick module is a combination of two potentiometers with a switch. While rotating the joystick handle, we press the switch down and rotate it, and therefore change the value of resistance in the X and Y potentiometers. We connect the Vrx and Vry pins of the joystick to the analog pins of the Arduino and the switch of the joystick to a digital input pin. The servos are connected to the digital outpins of the Arduino. When the switch is pressed and the handle of the joystick rotated, the servos get input from the Arduino to how much they should rotate according to the X and Y potentiometer values. This helps in the panning and tilting of the system holding the laser pointer. This prototype can also be used in surveillance camera applications.
 
 
 ## [PROJ 17: Water level controller using 8051 Microcontroller](https://www.electronicshub.org/water-level-controller-using-8051-microcontroller/)
 
 **Some of the components used:** AT89C51 Microcontroller (based on 8051 microcontroller), capacitors, resistors, push button, LCD display, NPN transistors, relays, DC Motor, potentiometer, diode, water level probes
+
+
+![wl](https://www.electronicshub.org/wp-content/uploads/2015/10/Water-Level-Controller-using-8051-Microcontroller-Circuit-Diagram.jpg)
+
 
 **Implementation:** There are three probes for checking water level: low, half and high and one probe connected to the supply. They are connected to the P0.0, P0.1 and P0.2 of the microcontroller through a transistor each. The output is taken from P0.7 and passed through a transistor into a relay to the DC motor. The LCD Display is connected to the P1 pins. The water level is checked and corresponding messages passed to the LCD display. If all the pins P0.0, P0.1 and P0.2 are low, LCD shows 'EMPTY' and P0.7 is made HIGH to start the motor. If only P0.0 is high, LCD shows 'LOW', and when P0.1 is also high, LCD shows 'HALF'; and all this while motor continues running. When P0.2 also becomes high, P0.7 becomes low and the motor is disconnected by the relay. The LCD displays "HIGH'. 
 
@@ -162,6 +184,10 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 ## [PROJ 18: Car parking guard circuit](https://www.electronicshub.org/car-parking-guard-circuit-using-infrared-sensor/)
 
 **Some of the components:** IC 7805 regulator, IR sensor, Photo Darlington transistors, LM567 tone detector, LM555 timer, buzzer, LED
+
+
+![cp](https://www.electronicshub.org/wp-content/uploads/2013/09/Block-Diagram-of-Car-Parking-Guard-Circuit-Using-Infrared-Sensor-740x180.png)
+
 
 **Implemetation:** The 7805 regulator is connected to the reverse lights supply, so the circuit gets powered with 5V supply from the regulator when the reverse lights are switched on. A diode is connected to the input of the regulator to prevent reverse current. The IR sensor will give its signal to the Photo Transistor; which will feed the input to the tone detector at a modulating frequency of 20kHz. When there is no object detected, the tone detector gives a high output which enables the 555 timer working in the astable multivibrator condition to produce a blinking LED and a beeping buzzer. If on the other hand, the object is sensed, then the tone detector gives a low output which results in the LED glowing constantly and the buzzer continuously ringing.
 
@@ -177,18 +203,26 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 **Comments:** The same project can be implemented on the Arduino easily. This project is mainly to understand how the same problem statement cam be interpreted using the 8051 microcontroller and why it is more cost effective to do it on the Arduino.
 
 
-## [PROJ 20: Fingerprint Based Biometric Attendance System](electronicshub.org/embedded-systems-projects-ideas/#4_Biometric_Attendance_System)
+## [PROJ 20: Fingerprint Based Biometric Attendance System](https://www.electronicshub.org/biometric-attendance-system-circuit/)
 
 **Some of the componenets used:** AVR Microcontroller Development board, Fingerprint Module R305, Keypad, RS232 serial cable, DC battery, Alpha Numeric LCD
 
 **Working of the Biometric:** The fingerprint module needs the user to enter their fingerprint twice while enrolling. The keypad takes in input on whether the person wants to give attendance(1), enrol(2), or clear data(3). The LCD shall display the necessary information on the screen.
+
+
+![fb](https://www.electronicshub.org/wp-content/uploads/2014/08/Biometric-Attendance-System-Circuit-Diagram-768x489.jpg)
+
 
 **Implementaion:** The fingerprint module sends data through the USART protocol. Thus, the microcontroller takes information from the fingerprint module's TX line and passes info into the module through its RX. The LCD Display shows the three options available and when the user chooses the attendance option, he is asked to place his finger on the module, which shall send appropriate information to the microcontroller and the LCD also displays accordingly. For enrolling, the student will have to press 2 which will ask the person to enter their roll number. After this the person will have to keep their finger on the module twice. The LCD then shows a message of acknowledgement. To enroll again, the person has to press 1 and press 2 to exit. The microcontroller basically receives signlas and takes decisions based on it. To clear the data, the user has to press 3 and enter the password on the keypad.
 
 
 ## [PROJ 21: Wireless Electronic Notice Board](https://www.electronicshub.org/wireless-electronic-notice-board-using-gsm/)
 
-**Some of the componenets used:** 8051 Microcontroller, 8051 Development Board, SIM 900A GSM MODEM (GSM Modem), SIM Card (to insert in the GSM modem), LCD Display, potentiometer,
+**Some of the componenets used:** 8051 Microcontroller, 8051 Development Board, SIM 900A GSM MODEM (GSM Modem), SIM Card (to insert in the GSM modem), LCD Display, potentiometer
+
+
+![gsm](https://www.electronicshub.org/wp-content/uploads/2015/10/Wireless-Electronic-Notice-Board-using-GSM-Circuit-Diagram.jpg)
+
 
 **Implementation:** The LCD display is connected to the microprocessor in the 8-bit mode. The GSM module is directly connected to the microprocessor if there is a level converter on the board. If not, we use a MAX232 IC as a mediator between them. The SIM card is inserted in the module before switching on the supply. To communicate between the GSM module and the microprocessor, we use the UART protocol at a 9600 baud rate. We check for the *+CMTI: "SM",<location number>* message from the GSM module and if it is received, we store the location number. Next, the microprocessor sends the command *AT+CMGR=<location number>* to which it receives a command from which it extracts only the body of the message and displays on the LCD Display.
 
@@ -197,12 +231,16 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 
 **Some of the components used:** AT89C51 microcontroller, RF encoder and decoder, RF transmitter and receiver pair, Push buttons, Buzzer, L293D motor driver, RS232 cable
 
-**Implementation:** The system consists of a transmitter and a receiver section where we give the commands to the robot through the transmitter and the receiver side acts on the instructions given. The tranmsitter section consists of RF encoder(HT12E), RF transmitter and push buttons. The 4 bit-input is applied through AD0-AD3 and transmission is enabled when the pin for enabling transmission is low. The input to the encoder is given through buttons and transmitted through the transmitter and received by the receiver serially. From the receiver, the data enters the decoder and from the decoder to the microcontroller which takes decision based on the instruction given. The metal detector is conneced to the PORT3.2 of the microcontroller which has an oscillator which produces an alternating magnetic field due to alternating current. When a metal is brought close to the detector, there is another coil which senses the change in magnetic field and gives the corresponding output from the detector. The motor driver is connected to the PORT1 of the microcontroller and the motors of the robot are controlled by the microcontroller. These motors run according to the instructions from the transmitter. When the metal detector senses a metal, the microcontroller makes the buzzer make the sound and stops the motors too.  
+**Implementation:** The system consists of a transmitter and a receiver section where we give the commands to the robot through the transmitter and the receiver side acts on the instructions given. The tranmsitter section consists of RF encoder(HT12E), RF transmitter and push buttons. The 4 bit-input is applied through AD0-AD3 and transmission is enabled when the pin for enabling transmission is low. The input to the encoder is given through buttons and transmitted through the transmitter and received by the receiver serially. From the receiver, the data enters the decoder and from the decoder to the microcontroller which takes decision based on the instruction given. The metal detector is conneced to the PORT3.2 of the microcontroller which has an oscillator which produces an alternating magnetic field due to alternating current. When a metal is brought close to the detector, there is another coil which senses the change in magnetic field and gives the corresponding output from the detector. The motor driver is connected to the PORT1 of the microcontroller and the motors of the robot are controlled by the microcontroller. These motors run according to the instructions from the transmitter. When the metal detector senses a metal, the microcontroller makes the buzzer make the sound and stops the motors too. This forms the basis of a [metal detecting robot](https://youtu.be/dwd8RPSL9Ps). 
 
 
 ## [PROJ 23: Automatic Alcohol Dispensor](https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
 
 **Some of the components used:** Proximity sensor, DC Water Pump, PNP Transistor or MOSFET, Diode
+
+
+![aad](https://content.instructables.com/FQD/EKUE/K891OK6C/FQDEKUEK891OK6C.LARGE.jpg?auto=webp&frame=1&width=1024&height=1024&fit=bounds)
+
 
 **Implementation:** We let the proximity sensor on the the dispensor and connect its output to the base of the transistor so that it acts as a switch. The collector is passed as input to the DC Pump. The emitter of the transistor is connected to the Vcc. Thus when the proximity sensor senses a hand nearby, the transistor acts as a closed switch and the DC pump is made to pump the alcohol into the user's hand. 
 
