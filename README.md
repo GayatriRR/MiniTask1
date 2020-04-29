@@ -136,29 +136,37 @@ Implemetation: The joystick module is a combination of two potentiometers with a
 
 PROJ 17: Water level controller using 8051 Microcontroller (https://www.electronicshub.org/water-level-controller-using-8051-microcontroller/)
 
-Some of the components used: AT89C51 Microcontroller (based on 8051 microcontroller), 8051 Development board, capacitors, resistors, push button, LCD display, NPN transistors, relays, DC Motor, potentiometer, diode, water level probes
+Some of the components used: AT89C51 Microcontroller (based on 8051 microcontroller), capacitors, resistors, push button, LCD display, NPN transistors, relays, DC Motor, potentiometer, diode, water level probes
 
 Implementation: There are three probes for checking water level: low, half and high and one probe connected to the supply. They are connected to the P0.0, P0.1 and P0.2 of the microcontroller through a transistor each. The output is taken from P0.7 and passed through a transistor into a relay to the DC motor. The LCD Display is connected to the P1 pins. The water level is checked and corresponding messages passed to the LCD display. If all the pins P0.0, P0.1 and P0.2 are low, LCD shows 'EMPTY' and P0.7 is made HIGH to start the motor. If only P0.0 is high, LCD shows 'LOW', and when P0.1 is also high, LCD shows 'HALF'; and all this while motor continues running. When P0.2 also becomes high, P0.7 becomes low and the motor is disconnected by the relay. The LCD displays "HIGH'. 
 
 Comments: Although we use Arduino for all our projects, if the question of choosing between different microcontrollers or ARM processor occurs, https://www.elprocus.com/difference-between-avr-arm-8051-and-pic-microcontroller/)
 
 
-PROJ 18: 
-PROJ 16: Automatic Alcohol Dispensor (https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
+PROJ 18: Car parking guard circuit (https://www.electronicshub.org/car-parking-guard-circuit-using-infrared-sensor/)
+
+Some of the components: IC 7805 regulator, IR sensor, Photo Darlington transistors, LM567 tone detector, LM555 timer, buzzer, LED
+
+Implemetation: The 7805 regulator is connected to the reverse lights supply, so the circuit gets powered with 5V supply from the regulator when the reverse lights are switched on. A diode is connected to the input of the regulator to prevent reverse current. The IR sensor will give its signal to the Photo Transistor; which will feed the input to the tone detector at a modulating frequency of 20kHz. When there is no object detected, the tone detector gives a high output which enables the 555 timer working in the astable multivibrator condition to produce a blinking LED and a beeping buzzer. If on the other hand, the object is sensed, then the tone detector gives a low output which results in the LED glowing constantly and the buzzer continuously ringing.
+
+Comments: In an actual car, the sensor part of the circuit should be on the rear end of the car while the LED and the buzzer should be on the dashboard to alert the driver.
+
+
+PROJ 19: Automatic Alcohol Dispensor (https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
 
 Some of the components used: Proximity sensor, DC Water Pump, PNP Transistor or MOSFET, Diode
 
 Implementation: We let the proximity sensor on the the dispensor and connect its output to the base of the transistor so that it acts as a switch. The collector is passed as input to the DC Pump. The emitter of the transistor is connected to the Vcc. Thus when the proximity sensor senses a hand nearby, the transistor acts as a closed switch and the DC pump is made to pump the alcohol into the user's hand. 
 
 
-PROJ 17: Mini Laptop (https://www.instructables.com/id/MINI-LAPTOP/)
+PROJ 20: Mini Laptop (https://www.instructables.com/id/MINI-LAPTOP/)
 
 Some of the components used: 7 inch IPS display and connector, Raspberry Pi 3, Bluetooth keyboard, 5600 Mah power supply, micro USB pin, audio system, memory card
 
 Implementation: Connect the display to the connector and fit the connector over the Raspberry Pi's GPIO pins. Get the power source, connect it to a switch and a micro USB pin to  the Raspberry Pi's power supply. A 16 GB memory card with Rasbian installed is inserted into the Micro SD card slot of the Pi. The audio system is now attached to the audio jack of the PI. The bluetooth keyboard is attached to the system through one of the USB ports of the Raspberry Pi.
 
 
-PROJ 18: Bluetooth Speaker (https://www.instructables.com/id/Worlds-Smallest-Bluetooth-Speaker/)
+PROJ 21: Bluetooth Speaker (https://www.instructables.com/id/Worlds-Smallest-Bluetooth-Speaker/)
 
 Some of the components used: CJMCU PAM8302 (Mono class amplifier board), speaker, bluetooth board, LIPO battery
 
@@ -167,7 +175,7 @@ Implementation: The speakers are connected to the load pins of the amplifier boa
 Comments: This has an easy implementation, thus could include a feature of increasing or decreasing volume of the speaker. This could be done by varying the gain of the amplifier based on the input given. This could be done by using a potentiometer to change the resistance in the circuit and thus the gain.
 
 
-PROJ 19: No contact IR thermometer (https://www.instructables.com/id/No-contact-IR-Thermometer/)
+PROJ 22: No contact IR thermometer (https://www.instructables.com/id/No-contact-IR-Thermometer/)
 
 Some of the components used: MLX 90614-BCH IR thermal sensor, Arduino CH340, OLED i2c Display, Laser diode, push button
 
