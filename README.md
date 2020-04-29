@@ -134,8 +134,16 @@ Some of the components used: Arduino, servo motors, joystick module, laser point
 Implemetation: The joystick module is a combination of two potentiometers with a switch. While rotating the joystick handle, we press the switch down and rotate it, and therefore change the value of resistance in the X and Y potentiometers. We connect the Vrx and Vry pins of the joystick to the analog pins of the Arduino and the switch of the joystick to a digital input pin. The servos are connected to the digital outpins of the Arduino. When the switch is pressed and the handle of the joystick rotated, the servos get input from the Arduino to how much they should rotate according to the X and Y potentiometer values. This helps in the panning and tilting of the system holding the laser pointer. This prototype can also be used in surveillance camera applications.
 
 
-PROJ 17: 
+PROJ 17: Water level controller using 8051 Microcontroller (https://www.electronicshub.org/water-level-controller-using-8051-microcontroller/)
 
+Some of the components used: AT89C51 Microcontroller (based on 8051 microcontroller), 8051 Development board, capacitors, resistors, push button, LCD display, NPN transistors, relays, DC Motor, potentiometer, diode, water level probes
+
+Implementation: There are three probes for checking water level: low, half and high and one probe connected to the supply. They are connected to the P0.0, P0.1 and P0.2 of the microcontroller through a transistor each. The output is taken from P0.7 and passed through a transistor into a relay to the DC motor. The LCD Display is connected to the P1 pins. The water level is checked and corresponding messages passed to the LCD display. If all the pins P0.0, P0.1 and P0.2 are low, LCD shows 'EMPTY' and P0.7 is made HIGH to start the motor. If only P0.0 is high, LCD shows 'LOW', and when P0.1 is also high, LCD shows 'HALF'; and all this while motor continues running. When P0.2 also becomes high, P0.7 becomes low and the motor is disconnected by the relay. The LCD displays "HIGH'. 
+
+Comments: Although we use Arduino for all our projects, if the question of choosing between different microcontrollers or ARM processor occurs, https://www.elprocus.com/difference-between-avr-arm-8051-and-pic-microcontroller/)
+
+
+PROJ 18: 
 PROJ 16: Automatic Alcohol Dispensor (https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
 
 Some of the components used: Proximity sensor, DC Water Pump, PNP Transistor or MOSFET, Diode
