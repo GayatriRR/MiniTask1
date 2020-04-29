@@ -164,24 +164,40 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 
 ## [PROJ 20: Fingerprint Based Biometric Attendance System](electronicshub.org/embedded-systems-projects-ideas/#4_Biometric_Attendance_System)
 
-**Some of the componenets used:** AVR Microcontroller Development board, Fingerprint Module R305, Keypad (4*
+**Some of the componenets used:** AVR Microcontroller Development board, Fingerprint Module R305, Keypad, RS232 serial cable, DC battery, Alpha Numeric LCD
+
+**Working of the Biometric:** The fingerprint module needs the user to enter their fingerprint twice while enrolling. The keypad takes in input on whether the person wants to give attendance(1), enrol(2), or clear data(3). The LCD shall display the necessary information on the screen.
+
+**Implementaion:** The fingerprint module sends data through the USART protocol. Thus, the microcontroller takes information from the fingerprint module's TX line and passes info into the module through its RX. The LCD Display shows the three options available and when the user chooses the attendance option, he is asked to place his finger on the module, which shall send appropriate information to the microcontroller and the LCD also displays accordingly. For enrolling, the student will have to press 2 which will ask the person to enter their roll number. After this the person will have to keep their finger on the module twice. The LCD then shows a message of acknowledgement. To enroll again, the person has to press 1 and press 2 to exit. The microcontroller basically receives signlas and takes decisions based on it. To clear the data, the user has to press 3 and enter the password on the keypad.
 
 
-## [PROJ 19: Automatic Alcohol Dispensor](https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
+## [PROJ 21: Wireless Electronic Notice Board](https://www.electronicshub.org/wireless-electronic-notice-board-using-gsm/)
+
+**Some of the componenets used:** 8051 Microcontroller, 8051 Development Board, SIM 900A GSM MODEM (GSM Modem), SIM Card (to insert in the GSM modem), LCD Display, potentiometer,
+
+**Implementation:** The LCD display is connected to the microprocessor in the 8-bit mode. The GSM module is directly connected to the microprocessor if there is a level converter on the board. If not, we use a MAX232 IC as a mediator between them. The SIM card is inserted in the module before switching on the supply. To communicate between the GSM module and the microprocessor, we use the UART protocol at a 9600 baud rate. We check for the *+CMTI: "SM",<location number>* message from the GSM module and if it is received, we store the location number. Next, the microprocessor sends the command *AT+CMGR=<location number>* to which it receives a command from which it extracts only the body of the message and displays on the LCD Display.
+
+
+## [PROJ 22: LC Meter](https://www.electronicshub.org/lc-meter-circuit-using-555-timer/)
+
+**Some of the components used:** 
+
+
+## [PROJ 22: Automatic Alcohol Dispensor](https://www.instructables.com/id/DIY-Automatic-Alcohol-Dispenser-No-Arduino-Needed/)
 
 **Some of the components used:** Proximity sensor, DC Water Pump, PNP Transistor or MOSFET, Diode
 
 **Implementation:** We let the proximity sensor on the the dispensor and connect its output to the base of the transistor so that it acts as a switch. The collector is passed as input to the DC Pump. The emitter of the transistor is connected to the Vcc. Thus when the proximity sensor senses a hand nearby, the transistor acts as a closed switch and the DC pump is made to pump the alcohol into the user's hand. 
 
 
-## [PROJ 20: Mini Laptop](https://www.instructables.com/id/MINI-LAPTOP/)
+## [PROJ 23: Mini Laptop](https://www.instructables.com/id/MINI-LAPTOP/)
 
 **Some of the components used:** 7 inch IPS display and connector, Raspberry Pi 3, Bluetooth keyboard, 5600 Mah power supply, micro USB pin, audio system, memory card
 
 **Implementation:** Connect the display to the connector and fit the connector over the Raspberry Pi's GPIO pins. Get the power source, connect it to a switch and a micro USB pin to  the Raspberry Pi's power supply. A 16 GB memory card with Rasbian installed is inserted into the Micro SD card slot of the Pi. The audio system is now attached to the audio jack of the PI. The bluetooth keyboard is attached to the system through one of the USB ports of the Raspberry Pi.
 
 
-## [PROJ 21: Bluetooth Speaker](https://www.instructables.com/id/Worlds-Smallest-Bluetooth-Speaker/)
+## [PROJ 24: Bluetooth Speaker](https://www.instructables.com/id/Worlds-Smallest-Bluetooth-Speaker/)
 
 **Some of the components used:** CJMCU PAM8302 (Mono class amplifier board), speaker, bluetooth board, LIPO battery
 
@@ -190,7 +206,7 @@ The synth is a pulse width modulated oscillator, routed through a light-controll
 **Comments:** This has an easy implementation, thus could include a feature of increasing or decreasing volume of the speaker. This could be done by varying the gain of the amplifier based on the input given. This could be done by using a potentiometer to change the resistance in the circuit and thus the gain.
 
 
-## [PROJ 22: No contact IR thermometer](https://www.instructables.com/id/No-contact-IR-Thermometer/)
+## [PROJ 25: No contact IR thermometer](https://www.instructables.com/id/No-contact-IR-Thermometer/)
 
 **Some of the components used:** MLX 90614-BCH IR thermal sensor, Arduino CH340, OLED i2c Display, Laser diode, push button
 
