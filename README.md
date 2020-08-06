@@ -1,4 +1,4 @@
-# MiniTask1
+# A Compilation of Miscellaneous Useful Electronics Projects
 The following documents my understanding of different projects done by different people across the world.
 
 ## [PROJ 1: Memory Puzzle Alarm Clock](https://www.instructables.com/id/Memory-Puzzle-Alarm-Clock/)
